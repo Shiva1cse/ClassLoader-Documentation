@@ -1,0 +1,29 @@
+                       CLASSLOADER
+1)Java ClassLoader is module of JVM(Java Runtime Environment).
+It will load the java class files into the JVM during the runtime dynamically.
+2)ClassLoader is a abstract class that handles loading of classes after we get .class file from JVM. 
+3)It is imported in java class using Java.lang.ClassLoader package.
+4)It can locate or generate data from the binary name of the class. 
+5)Every java Class object contains a reference to the ClassLoader that defined it.
+6)It cannot  create the class object of array class as they are created at runtime. 
+7)The Java class loader is written in Java. It is therefore possible to create your own class loader.
+
+ClassLoader() :
+          Creates a new class loader using the ClassLoader returned by the method getSystemClassLoader() as the parent class loader.
+
+ClassLoader(ClassLoader parent) 
+          Creates a new class loader using the specified parent class loader for delegation.
+
+8)Java EE projects will have the WAR OR EAR files so the java classes in that are loaded using the ClassLoader
+
+
+There are three types of built in ClassLoader in java:
+
+Bootstrap Class Loader – It loads JDK internal classes, typically loads rt.jar(runtime library file) and other core classes for example java.lang.* package classes
+
+Extensions Class Loader – It loads classes from the JDK extensions directory, usually $JAVA_HOME/lib/ext directory.
+
+System Class Loader – It loads classes from the current classpath that can be set while invoking a program using -cp or -classpath command line options 
+
+
+
